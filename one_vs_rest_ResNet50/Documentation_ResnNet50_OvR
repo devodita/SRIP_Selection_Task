@@ -1,0 +1,33 @@
+=============================================================
+                 Animal Image Classification System
+=============================================================
+
+1. Introduction:
+   This folder contains the necessary scripts and documentation for an animal image classification system using TensorFlow and ResNet50 architecture.
+
+2. Scripts:
+   - `animal_classification.py`: Main script for model training and evaluation.
+   - [Add any other scripts if applicable]
+
+3. Dataset:
+   - Ensure the dataset is organized in 'train', 'validation', and 'test' folders.
+   - Subfolders within each folder should represent different animal classes.
+   - Include a text file named "name of the animals.txt" in the 'input' folder with a list of animal names.
+
+4. Usage:
+   - Update the `dataset_folder` and `input_folder` variables in `animal_classification.py`.
+   - Execute `animal_classification.py` to train and evaluate the model.
+
+5. Model Output:
+   - Model weights are saved in the same folder as the script after each fold.
+   - Confusion matrices for each fold are printed during execution.
+
+6. Adjusting Parameters:
+   - Modify batch size, epochs, or other parameters in `animal_classification.py` as needed.
+
+7. References:
+   - TensorFlow: https://www.tensorflow.org/
+   - ResNet50: https://keras.io/api/applications/resnet/#resnet50
+
+
+=============================================================
