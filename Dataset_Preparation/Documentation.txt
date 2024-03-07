@@ -1,0 +1,79 @@
+Animal Image Dataset
+
+Overview:
+The dataset comprises 5400 animal images categorized into 90 different classes, representing distinct animal categories.
+
+Data Split:
+The dataset is divided into three subsets for three-fold cross-validation:
+- Training Set: 540 images
+- Validation Set: 540 images
+- Test Set: 4320 images
+
+
+
+Input Structure:
+- dataset
+  - animals
+      - class_1
+        - image1.jpg
+        - image2.jpg
+        - ...
+      - class_2
+        - image1.jpg
+        - image2.jpg
+        - ...
+      - ...
+      - class_90
+        - image1.jpg
+        - image2.jpg
+        - ...
+    - animals.txt
+
+
+
+Output Structure:
+Upon processing, the output directory structure is as follows:
+- output_directory
+    - train
+      - class_1
+        - image1.jpg
+        - image2.jpg
+        - ...
+      - class_2
+        - image1.jpg
+        - image2.jpg
+        - ...
+      - ...
+      - class_90
+        - image1.jpg
+        - image2.jpg
+        - ...
+    - validation
+      - class_1
+        - image1.jpg
+        - image2.jpg
+        - ...
+      - class_2
+        - image1.jpg
+        - image2.jpg
+        - ...
+      - ...
+      - class_90
+        - image1.jpg
+        - image2.jpg
+        - ...
+    - test
+      - class_1
+        - image1.jpg
+        - image2.jpg
+        - ...
+      - class_2
+        - image1.jpg
+        - image2.jpg
+        - ...
+      - ...
+      - class_90
+        - image1.jpg
+        - image2.jpg
+        - ...
+
