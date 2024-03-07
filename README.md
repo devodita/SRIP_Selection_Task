@@ -30,19 +30,22 @@ This repository contains code and documentation for a comprehensive analysis of 
    - Plotting the output of all convolutional layers.
    - Discussion on insights gained from automatically created features.
 
+
+
 ## Usage
 
 1. **Dataset Preparation:**
-   - Execute `prepare_dataset.py` to organize the dataset for different classification scenarios.
+   - Execute `prepare_dataset.py` to organize the dataset for 3-fold cross-validation.
 
-2. **Model Development:**
-   - Run `build_model.py` to create a custom CNN model.
+2. **Model Development & Training and Evaluation:**
+   - Run `One_vs_Rest.py` to create a CNN model, train the model on prepared datasets and generate classification matrices.
+   - Use the `.py` under the corresponding field for the required CNN:
+        - The one under `one_vs_rest_ResNet50` folder is for **ResNet50** (An existing CNN with 50 layers)
 
-3. **Training and Evaluation:**
-   - Use `train_and_evaluate.py` to train the model on prepared datasets and generate classification matrices.
-
-4. **Convolutional Layer Visualization:**
+3. **Convolutional Layer Visualization:**
    - Execute `visualize_conv_layers.py` to visualize the output of all convolutional layers.
+
+
 
 ## Requirements
 
@@ -50,6 +53,9 @@ This repository contains code and documentation for a comprehensive analysis of 
 - TensorFlow (version specified in `requirements.txt`)
 - Matplotlib
 - Scikit-learn
+- GPU: P100
+
+
 
 ## Acknowledgments
 
