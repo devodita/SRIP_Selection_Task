@@ -39,7 +39,7 @@ This repository contains code and documentation for a comprehensive analysis of 
 
 2. **Model Development & Training and Evaluation:**
    - Run `One_vs_Rest.py` to create a CNN model, train the model on prepared datasets using one-vs-rest classification and generate confusion matrices.
-   - Run `5-class_classification_ResNet50` to create a CNN model, train the model on prepared datasets using 5-class classification and generate confusion matrices.
+   - Run `5_class.py` to create a CNN model, train the model on prepared datasets using 5-class classification and generate confusion matrices.
    - Use the `.py` under the corresponding folder for the required CNN:
         - The ones under `one_vs_rest_ResNet50` and `5-class_classification_ResNet50` folder is for **ResNet50** (An existing CNN with 50 layers)
 
