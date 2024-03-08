@@ -51,10 +51,10 @@ This repository contains code and documentation for a comprehensive analysis of 
 
 
 
-## Requirements
+## Requirements (version specified in `requirements.txt`)
 
-- Python 3.x
-- TensorFlow (version specified in `requirements.txt`)
+- Python 
+- TensorFlow 
 - Matplotlib
 - Scikit-learn
 - GPU: P100
