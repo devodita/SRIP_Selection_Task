@@ -66,6 +66,10 @@ This repository contains code and documentation for a comprehensive analysis of 
 This was carried out in Kaggle with the GPU P100 accelerator (for faster computation).
 Check out the Kaggle Notebook here: [Experiment](https://www.kaggle.com/devoditac/srip-iit-gandhinagar)
 
+## Future Directions
+
+- A more robust CNN maybe implemented (such as increasing Layers, using different activations etc.)
+- The visualisation can be incorporated with speicifc filters (e.g.: Edge Detection, Attention Filters etc.)
 
 ## Acknowledgments
 
