@@ -62,6 +62,11 @@ This repository contains code and documentation for a comprehensive analysis of 
 - GPU: P100 (for faster computation)
 
 
+## Experiment Details
+
+This was carried out in Kaggle with the GPU P100 accelerator (for faster computation).
+Check out the Kaggle Notebook here: [Experiment](https://www.kaggle.com/devoditac/srip-iit-gandhinagar)
+
 
 ## Acknowledgments
 
