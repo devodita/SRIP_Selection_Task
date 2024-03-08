@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 dataset_folder = "/kaggle/working/" #change if needed
 
 # Set the path to the input folder
-input_folder = "/kaggle/input/animal-image-dataset-90-different-animals"
+input_folder = "/kaggle/input/animal-image-dataset-90-different-animals" #change if needed
 
 # Load the list of animal names from the text file
 with open(os.path.join(input_folder, "name of the animals.txt"), "r") as file:
