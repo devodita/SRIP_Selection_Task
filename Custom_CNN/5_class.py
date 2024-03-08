@@ -80,17 +80,7 @@ for fold, (train_index, test_index) in enumerate(kf.split(np.arange(5400))):
         epochs=5,  # Adjust the number of epochs as needed
         validation_data=validation_generator,
     )
-    
-    
-    # Plot the training and validation loss
-    plt.figure(figsize=(12, 4))
-    plt.subplot(1, 2, 1)
-    plt.plot(history.history['loss'], label='Training Loss')
-    plt.plot(history.history['val_loss'], label='Validation Loss')
-    plt.title('Training and Validation Loss')
-    plt.xlabel('Epoch')
-    plt.ylabel('Loss')
-    plt.legend()
+
     
     # Plot the training and validation accuracy
     plt.subplot(1, 2, 2)
