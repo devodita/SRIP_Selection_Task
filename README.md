@@ -61,7 +61,7 @@ This repository contains code and documentation for a comprehensive analysis of 
 ## Acknowledgments
 
 - The dataset used in this project was obtained from [Kaggle](https://www.kaggle.com/datasets/iamsouravbanerjee/animal-image-dataset-90-different-animals?resource=download).
-- Inspiration for the custom CNN model design was drawn from [To be updated soon]
+- Inspiration for the custom CNN model design was drawn from [Link](https://towardsdatascience.com/building-a-convolutional-neural-network-cnn-in-keras-329fbbadc5f5).
 
 
 Feel free to explore, experiment, and contribute to this repository!
