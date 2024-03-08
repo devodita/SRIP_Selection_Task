@@ -2,56 +2,49 @@
                         Animal Image Classification System
 ===========================================================================
 
-This documentation provides an overview and usage guide for the Animal Image Classification System, which utilizes the ResNet50 architecture for multi-class classification of animal images.
+This documentation provides an overview and usage guide for the Animal Image Classification System, which utilizes the ResNet50 architecture for 5-class classification of animal images.
 
-1. **Introduction:**
+1. Introduction:
    - The system is designed to classify images of animals into 90 different classes using the ResNet50 model.
-   - K-Fold cross-validation is employed to evaluate the model's performance.
+   - 3-Fold cross-validation is employed to evaluate the model's performance.
 
-2. **Requirements:**
-   - This system relies on the following libraries:
-     - TensorFlow (version 2.x)
-     - NumPy
-     - scikit-learn
-     - Matplotlib
-
-3. **Folder Structure:**
+2. Folder Structure:
    - The dataset is assumed to be organized in the following structure:
      - `train/` - Training images
      - `validation/` - Validation images
      - `test/` - Test images
 
-4. **Model Architecture:**
+3. Model Architecture:
    - The ResNet50 model is used for feature extraction.
    - A Global Average Pooling layer is added, followed by a Dense layer with softmax activation for classification.
 
-5. **Configuration:**
+4. Configuration:
    - Modify the `dataset_folder` and `input_folder` variables to set the paths to the dataset and input folders, respectively.
    - Adjust the `img_size`, `batch_size`, and `num_classes` variables based on your requirements.
 
-6. **K-Fold Cross-Validation:**
+5. 3-Fold Cross-Validation:
    - The system uses K-Fold cross-validation with 3 folds.
    - Training, validation, and test datasets are generated for each fold.
 
-7. **Training:**
+6. Training:
    - The model is trained using the Adam optimizer and categorical crossentropy loss.
    - The number of epochs can be adjusted based on the training requirements.
 
-8. **Evaluation:**
+7. Evaluation:
    - After training, the model is evaluated on the test set.
    - Test accuracy, confusion matrix, and model weights are saved for each fold.
 
-9. **Usage:**
+8. Usage:
    - Execute the script, ensuring that the required libraries are installed.
    - Check the console for training and evaluation outputs.
 
-10. **Saved Model Weights:**
+9. Saved Model Weights:
    - Model weights for each fold are saved in the format: `resnet50_fold_<fold_number>.weights.h5`
 
-11. **Confusion Matrix:**
+10. Confusion Matrix:
    - A confusion matrix is generated for each fold, providing insights into classification performance.
 
-12. **Note:**
+11. Note:
     - Ensure that the directory structure, file names, and configurations align with your dataset and project requirements.
 
 ===========================================================================
