@@ -64,7 +64,7 @@ This repository contains code and documentation for a comprehensive analysis of 
 ## Experiment Details
 
 This was carried out in Kaggle with the GPU P100 accelerator (for faster computation).
-Check out the Kaggle Notebook here: [Experiment](https://www.kaggle.com/devoditac/srip-iit-gandhinagar)
+Check out the Kaggle Notebook here: [Experiment](https://www.kaggle.com/code/devoditac/srip-iit-gandhinagar)
 
 ## Future Directions
 
