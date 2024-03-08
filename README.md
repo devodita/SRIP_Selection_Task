@@ -59,7 +59,6 @@ This repository contains code and documentation for a comprehensive analysis of 
 - TensorFlow 
 - Matplotlib
 - Scikit-learn
-- GPU: P100 (for faster computation)
 
 
 ## Experiment Details
