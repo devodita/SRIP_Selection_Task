@@ -48,7 +48,7 @@ This repository contains code and documentation for a comprehensive analysis of 
         - The ones under `Custom_CNN` folder uses a **custom CNN** of 9 layers (more details in `Documentation_CustomCNN.txt`)
 
 3. **Convolutional Layer Visualization:**
-   - Execute `visualize_conv_layers.py` to visualize the output of all convolutional layers.
+   - Add `visualize_conv_layers.py` to the corresponding `.py` to visualize the output of convolutional layers.
 
 
 
