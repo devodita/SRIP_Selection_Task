@@ -1,1 +1,5 @@
-//To be updated soon//
+python==3.7.0
+scikit-learn==0.24.2
+tensorflow==2.15.0.post1
+matplotlib==3.8.0
+numpy==1.26.4
