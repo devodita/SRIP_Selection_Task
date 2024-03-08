@@ -1,0 +1,31 @@
+Insights on Automatically Created Features
+Critical observations have been made through the analysis of the generated visualizations, providing profound insights into the nature of automatically created features:
+
+Blurring with Higher Activation Layers: The visualizations consistently reveal that as the activation within a layer intensifies, the resulting representation becomes progressively blurred. This consistent trend is observed across distinct models and classification scenarios.
+
+
+Explanation:
+
+In the context of convolutional layer visualization, a noteworthy insight emerges as one delves deeper into the network and scrutinizes higher activation layers. The features detected by neurons in these layers tend to become more abstract and intricate, marking a progression that may lead to a loss of spatial information and finer details in the resulting visualizations.
+
+Understanding Hierarchical Feature Extraction
+In the initial layers of a Convolutional Neural Network (CNN), neurons often exhibit sensitivity to straightforward patterns like edges, corners, and textures. However, as one traverses deeper into the network, these neurons amalgamate these simple patterns, enabling the recognition of more complex and high-level features, including object parts or entire objects. Neurons in higher layers possess larger receptive fields, capturing more global information but potentially sacrificing finer details in the process.
+
+Implications on Visualization Quality
+The observed blurriness in higher activation layers can be attributed to this hierarchical feature extraction. While the loss of spatial information might be considered a limitation for tasks such as image reconstruction, it proves to be advantageous for tasks like object recognition, where an understanding of high-level features holds paramount importance.
+
+It is essential to acknowledge that factors beyond feature abstraction contribute to the perceived blurriness in visualizations. Operations like max pooling, which involves downsampling, and the use of activation functions can also influence the overall clarity of the visualization. For instance, max pooling reduces spatial resolution, thereby contributing to the perceived blurriness in the visual representation.
+
+
+
+Model-specific Insights
+
+ResNet50: Notably, the ResNet50 model yields 10 visualizations for each fold in the binary classification scenario. This multiplicity of visualizations suggests a more nuanced activation analysis, potentially indicating the presence of intricate features.
+
+Custom 9-layered CNN: In contrast, the bespoke CNN generates only 3 visualizations for each fold in the binary classification scenario. This discrepancy implies that the model may harbor fewer complex features compared to the more sophisticated ResNet50 architecture.
+
+
+Nomenclature used:
+a_b.png
+Here a represents the fold number (1,2,3) and b represents the activation layer.
+
