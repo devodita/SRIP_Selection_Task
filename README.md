@@ -51,7 +51,8 @@ This repository contains code and documentation for a comprehensive analysis of 
 
 
 
-## Requirements (version specified in `requirements.txt`)
+## Requirements 
+(version specified in `requirements.txt`)
 
 - Python 
 - TensorFlow 
