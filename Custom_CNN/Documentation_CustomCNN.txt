@@ -1,0 +1,82 @@
+## Custom CNN Documentation
+
+  Architecture Overview
+
+The custom Convolutional Neural Network (CNN) architecture implemented in this repository is designed for image classification tasks using a dataset of animal images. The architecture is created using the TensorFlow and Keras libraries. Below is an overview of the key components and layers in the custom CNN.
+
+ # Model Architecture:
+
+1.  Input Layer: 
+   - Shape: (224, 224, 3) - Represents the input image dimensions with three color channels (RGB).
+
+2.  Convolutional Layers: 
+   - Conv2D with 32 filters, kernel size (3, 3), and ReLU activation.
+   - MaxPooling2D with pool size (2, 2) - Performs down-sampling to reduce spatial dimensions.
+
+   - Conv2D with 64 filters, kernel size (3, 3), and ReLU activation.
+   - MaxPooling2D with pool size (2, 2).
+
+   - Conv2D with 128 filters, kernel size (3, 3), and ReLU activation.
+   - MaxPooling2D with pool size (2, 2).
+
+   These convolutional layers are responsible for learning hierarchical features in the input images.
+
+3.  Flatten Layer: 
+   - Flattens the output of the last convolutional layer to a 1D array.
+
+4.  Dense (Fully Connected) Layers: 
+   - Dense layer with 256 units and ReLU activation - Adds a level of abstraction to the features learned by convolutional layers.
+   - Dense layer with the number of units equal to the number of classes in the dataset, using softmax activation for multi-class classification.
+
+ # Model Compilation:
+
+-  Optimizer:  Adam optimizer is used for gradient descent during training.
+-  Loss Function:  Categorical Crossentropy - Appropriate for multi-class classification tasks.
+-  Metrics:  Accuracy - Monitored during training and evaluation.
+
+  Data Processing:
+
+-  ImageDataGenerator: 
+  - Used for real-time data augmentation during training.
+  - Rescales pixel values to the range [0, 1].
+
+-  Data Splitting: 
+  - K-Fold cross-validation with 3 folds is applied to the dataset.
+
+  Training and Evaluation:
+
+-  Training Loop: 
+  - The model is trained for 5 epochs. You can adjust the number of epochs as needed.
+
+-  Validation: 
+  - Model performance is monitored on a validation set during training.
+
+-  Testing: 
+  - The trained model is evaluated on a separate test set.
+
+  Model Saving:
+
+-  Weights: 
+  - Weights of the trained model for each fold are saved in H5 format.
+
+  Visualization:
+
+-  Training and Validation Plots: 
+  - Loss and accuracy plots are generated for each fold during training.
+
+-  Confusion Matrix: 
+  - Confusion matrices are generated for each fold to visualize classification performance on the test set.
+
+  Usage:
+
+1.  Dataset: 
+   - Ensure that the animal dataset is organized into 'train,' 'validation,' and 'test' folders.
+
+2.  Model Training: 
+   - Run the provided scripts (One_vs_Rest.py, 5_class.py) to train the model using K-Fold cross-validation.
+
+3.  Visualization: 
+   - Check the generated plots and confusion matrices to analyze model performance.
+
+Feel free to modify hyperparameters, such as the number of epochs, architecture, or any other parameters based on the specific requirements of your project.
+
