@@ -29,6 +29,9 @@ This repository contains code and documentation for a comprehensive analysis of 
 4. **Convolutional Layer Visualization:**
    - Plotting the output of all convolutional layers.
    - Discussion on insights gained from automatically created features.
+  
+5. **Documentation (.txt files):**
+   - These files are for the user's reference.
 
 
 
