@@ -79,5 +79,3 @@ Check out the Kaggle Notebook here: [Experiment](https://www.kaggle.com/code/dev
 
 Feel free to explore, experiment, and contribute to this repository!
 
-
-**Note**: This repo is currently under construction.
