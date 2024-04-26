@@ -1,4 +1,4 @@
-# SRIP_Selection_Task
+# Animal Image Classification
 
 
 
